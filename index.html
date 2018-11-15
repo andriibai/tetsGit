@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="Stanislav Tyrinov">
+    <link rel="icon" href="icons/favicon.ico" type="image/x-icon">
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <title>Final Project</title>
+  </head>
+  <body>
+    <!-- Fixed navbar -->
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Final Project</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul id="menu" class="nav navbar-nav">
+            <li><a href="#t1">Task 1</a></li>
+            <li><a href="#t2">Task 2</a></li>
+            <li><a href="#t3">Task 3</a></li>
+            <li><a href="#t4">Task 4</a></li>
+            <li><a href="#t5">Task 5</a></li>
+            <li><a href="#t6">Task 6</a></li>
+            <li><a href="#t7">Task 7</a></li>
+            <li><a href="#t8">Task 8</a></li>
+            <li><a href="#t9">Task 9</a></li>
+            <li><a href="#t10">Task 10</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+
+   <!-- Main jumbotron for a primary marketing message or call to action -->
+    <div class="jumbotron">
+      <div class="container">
+        <h1>Hello, world!</h1>
+        <p>This is a final project for JavaScript base course for students at IT Education Academy Lviv. Have fun!</p>
+        <p><a class="btn btn-primary btn-lg" target="_blank" href="https://github.com/avalon2110/JS_base" role="button">Github repo &raquo;</a></p>
+      </div>
+    </div>
+
+    <div class="container">
+      <!-- Example row of columns -->
+      <div class="row" id="t1">
+        <div class="col-md-6" >
+          <h2>Task1 Condition</h2>
+          <p class="taskCondition">You should check input value. It should be email checking.
+          The algorithm : value should contain @. And @ cannot be first or last digit.
+          Write function that has 1 argument - value of input.
+          For example - "@alal" - should return false, "qwe@" - should return false, asd@@asd - should return false.
+          "asd@asd" should return true</p>
+        </div>
+        <div class="col-md-6">
+          <h2>Task1</h2>
+          <div class="" style="text-align: center">
+            <label style="font-size:20px">Email checking</label>
+            <br><br>
+            <button type="button" class="btn btn-primary btn-lg" id="task1_btn" name="button">Check</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="row" id="t2">
+        <div class="col-md-6" >
+          <h2>Task2 Condition</h2>
+          <p class="taskCondition">You should check input value. It should be phone checking.
+          The algorithm : value should contain only numbers. Example: "123" should return true.
+          "qwe123" should return false</p>
+        </div>
+        <div class="col-md-6">
+          <h2>Task2</h2>
+          <div class="" style="text-align: center">
+            <label style="font-size:20px">Phone checking</label>
+            <br><br>
+            <button type="button" class="btn btn-primary btn-lg" id="task2_btn" name="button">Check</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="row" id="t3">
+        <div class="col-md-6" >
+          <h2>Task3 Condition</h2>
+          <p class="taskCondition">You should check input value. It should be password checking.
+          The algorithm : value length should be 8 or more. Also value should contain
+          numbers. Exaple: "qwe" should return false. "qwertyui" should return false.
+          "qwerty12" should return true</p>
+        </div>
+        <div class="col-md-6">
+          <h2>Task3</h2>
+          <div class="" style="text-align: center">
+            <label style="font-size:20px">Password checking</label>
+            <br><br>
+            <button type="button" class="btn btn-primary btn-lg" id="task3_btn" name="button">Check</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="row" id="t4">
+        <div class="col-md-6" >
+          <h2>Task4 Condition</h2>
+          <p class="taskCondition">There are array with 4 objects(4 users). You want to create new user and
+          login should be unique. Example : Bob --> should return false, Mike -->should return true
+          </p>
+          <pre>
+            var users = [
+              {
+                login:"Bob",
+                email: "bob@email.com",
+                phone: 123456,
+                isMarried: true
+              },
+              {
+                login:"John",
+                email: "john@email.com",
+                phone: 123456,
+                isMarried: false
+              },
+              {
+                login:"Vasya",
+                email: "vasya@email.com",
+                phone: 123456,
+                isMarried: true
+              },
+              {
+                login:"Ivan",
+                email: "ivan@email.com",
+                phone: 123456,
+                isMarried: false
+              }
+            ]
+          </pre>
+        </div>
+        <div class="col-md-6">
+          <h2>Task4</h2>
+          <div class="" style="text-align: center">
+            <label style="font-size:20px">Login checking</label>
+            <br><br>
+            <button type="button" class="btn btn-primary btn-lg" id="task4_btn" name="button">Check</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="row" id="t5">
+        <div class="col-md-6" >
+          <h2>Task5 Condition</h2>
+          <p class="taskCondition">There are array with 4 objects(4 users). User types his login(use only logins from array)
+          and his password. Check if the user writes correct password. Example: login - Bob, password - qwerty
+          returns true. login - John, password - qwerty   - return false.
+          </p>
+          <pre>
+            var users = [
+              {
+                login:"Bob",
+                email: "bob@email.com",
+                phone: 123456,
+                isMarried: true,
+                password: "qwerty"
+              },
+              {
+                login:"John",
+                email: "john@email.com",
+                phone: 123456,
+                isMarried: false,
+                password: "qwerty2"
+              },
+              {
+                login:"Vasya",
+                email: "vasya@email.com",
+                phone: 123456,
+                isMarried: true,
+                password:"qwertyqwerty"
+              },
+              {
+                login:"Ivan",
+                email: "ivan@email.com",
+                phone: 123456,
+                isMarried: false,
+                password: "qweqwe"
+              }
+            ]
+          </pre>
+        </div>
+        <div class="col-md-6">
+          <h2>Task5</h2>
+          <div class="" style="text-align: center">
+            <label style="font-size:20px">Password checking</label>
+            <br>
+            <br><br>
+            <button type="button" class="btn btn-primary btn-lg" id="task5_btn" name="button">Check</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="row" id="t6">
+        <div class="col-md-6" >
+          <h2>Task6 Condition</h2>
+          <p class="taskCondition">We sould check passwords. value of input "password" should be equal value of input "confirm password".
+            If they are equal, return true. If not - return false.
+          </p>
+        </div>
+        <div class="col-md-6">
+          <h2>Task6</h2>
+          <div class="" style="text-align: center">
+            <label style="font-size:20px">Password checking</label>
+            <br>
+            <button type="button" class="btn btn-primary btn-lg" id="task6_btn" name="button">Check</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="row" id="t7">
+        <div class="col-md-6" >
+          <h2>Task7 Condition</h2>
+          <p class="taskCondition">There are array with 4 objects(4 users). We should create new user.
+            Create new object from input data and push it to usersArray.
+          </p>
+          <pre>
+            var usersArray = [
+            {
+               login:"lol",
+               email:"lol@gmail.com",
+               pass:"pass2",
+               isMarried:true,
+               phone:"123456"
+            },
+            {
+               login:"lol",
+               email:"lol@gmail.com",
+               pass:"pass2",
+               isMarried:true,
+               phone:11223344
+            },
+            {
+               login:"lol",
+               email:"lol@gmail.com",
+               pass:"pass3",
+               isMarried:false,
+               phone:2345678
+            },
+            {
+               login:"lol",
+               email:"lol@gmail.com",
+               pass:"pass4",
+               isMarried:true,
+               phone:987654
+            }
+          ]
+          </pre>
+        </div>
+        <div class="col-md-6">
+          <h2>Task7</h2>
+          <div class="" style="text-align: center">
+            <label style="font-size:20px" for="task7_inp">Create user</label>
+            <br>
+            <button type="button" class="btn btn-primary btn-lg" id="task7_btn" name="button">Check</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="row" id="t8">
+        <div class="col-md-6" >
+          <h2>Task8 Condition</h2>
+          <p class="taskCondition">There are array with 4 objects(4 users). We should add all salaries and return sum.
+          </p>
+          <pre>
+            var usersArray = [
+            {
+               login:"lol",
+               email:"lol@gmail.com",
+               pass:"pass2",
+               isMarried:true,
+               phone:"123456",
+               salary: 500
+            },
+            {
+               login:"lol",
+               email:"lol@gmail.com",
+               pass:"pass2",
+               isMarried:true,
+               phone:11223344,
+               salary: 300
+            },
+            {
+               login:"lol",
+               email:"lol@gmail.com",
+               pass:"pass3",
+               isMarried:false,
+               phone:2345678,
+               salary: 200
+            },
+            {
+               login:"lol",
+               email:"lol@gmail.com",
+               pass:"pass4",
+               isMarried:true,
+               phone:987654,
+               salary: 400
+            }
+          ]
+          </pre>
+        </div>
+        <div class="col-md-6">
+          <h2>Task8</h2>
+          <div class="" style="text-align: center">
+            <label style="font-size:20px">Salary sum</label>
+            <br>
+            <button type="button" class="btn btn-primary btn-lg" id="task8_btn" name="button">Check</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="row" id="t9">
+        <div class="col-md-6" >
+          <h2>Task9 Condition</h2>
+          <p class="taskCondition">There are array with 4 objects(4 users). If user's dateOfBirth < 1960 , add to salary input value.
+            Return array with new salaries.
+          </p>
+          <pre>
+            var myArray = [
+            {
+               login:"lol",
+               email:"lol@gmail.com",
+               pass:"pass2",
+               isMarried:true,
+               phone:"123456",
+               salary: 500,
+               dateOfBirth: 1990
+            },
+            {
+               login:"lol",
+               email:"lol@gmail.com",
+               pass:"pass2",
+               isMarried:true,
+               phone:11223344,
+               salary: 300,
+               dateOfBirth: 1951
+            },
+            {
+               login:"lol",
+               email:"lol@gmail.com",
+               pass:"pass3",
+               isMarried:false,
+               phone:2345678,
+               salary: 200,
+               dateOfBirth: 1953
+            },
+            {
+               login:"lol",
+               email:"lol@gmail.com",
+               pass:"pass4",
+               isMarried:true,
+               phone:987654,
+               salary: 400,
+               dateOfBirth: 1980
+            }
+          ];
+          </pre>
+        </div>
+        <div class="col-md-6">
+          <h2>Task9</h2>
+          <div class="" style="text-align: center">
+            <label style="font-size:20px" for="task9_inp1">Salary adding</label>
+            <br>
+            <button type="button" class="btn btn-primary btn-lg" id="task9_btn" name="button">Check</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="row" id="t10">
+        <div class="col-md-6" >
+          <h2>Task10 Condition</h2>
+          <p class="taskCondition">Create function calculator. You should use two numbers. Example: "5 + 3" --> should return 8.
+          </p>
+        </div>
+        <div class="col-md-6">
+          <h2>Task10</h2>
+          <div class="" style="text-align: center">
+            <label style="font-size:20px" for="task10_inp1">Calculator</label>
+            <br>
+            <button type="button" class="btn btn-primary btn-lg" id="task10_btn" name="button">Check</button>
+          </div>
+        </div>
+      </div>
+      <hr>
+
+      <footer>
+        <p>&copy; 2018 ITEA Lviv.</p>
+      </footer>
+    </div>
+
+
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.js"></script>
+
+    <script src="js/task1.js"></script>
+    <script src="js/task2.js"></script>
+    <script src="js/task3.js"></script>
+    <script src="js/task4.js"></script>
+    <script src="js/task5.js"></script>
+    <script src="js/task6.js"></script>
+    <script src="js/task7.js"></script>
+    <script src="js/task8.js"></script>
+    <script src="js/task9.js"></script>
+    <script src="js/task10.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function(){
+        $("#menu").on("click","a", function (event) {
+          event.preventDefault();
+          var id  = $(this).attr('href'),
+          top = $(id).offset().top;
+          $('body,html').animate({scrollTop: top-70}, 700);
+        });
+      });
+    </script>
+  </body>
+</html>
